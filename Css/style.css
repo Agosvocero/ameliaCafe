@@ -93,188 +93,7 @@ h4              {
         animation-duration: 3s;
         animation-iteration-count: infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-/* *   {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-.contenedor     {
-    background-color: #BF9270;
-    color: #FFEDDB;
-    font-family:'Source Sans Pro';
-    display:grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 25% (repeat(4));
-    grid-template-areas: 
-    "encabezado encabezado"
-    "amelia amelia"
-    "comida comida"
-    "footer footer";
-} */
-
-/* HEADER INDEX */
-
-/* .encabezado     {
-    grid-area: encabezado;
-    background-image: url(../Imagenes/readme.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;  
-    height: 50%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    justify-content: space-between; 
-}
-.encabezado img     {
-
-    margin: 10px;
-    border: 5px solid black;
-    border-radius: 20px;
-}
-.navegador  {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-.navegador ul   {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start; 
-}
-.navegador ul li   {
-    text-decoration:none;
-    margin: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: flex-start;
-    align-items: flex-end; 
-    transition:transform;
-}
-
-.navegador ul li:hover      {
-    transform:scaleY(2)
-} */
-
-/* SECCION 1 */
-
-
-/* .ameliaCafe     {
-    grid-area: amelia;
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    
-    
-}
-.hijosAmelia    {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-h1  {
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Source Sans Pro';
-    color: #EDCDBB;
-}
-
-.ameliaCafe img     {
-    
-    margin: 30px;
-    width: 300px;
-    height: 300px;
-    
-}
-.ameliaCafe p    {
-    text-align: justify;
-    width: 50%; 
-    margin: 30px;
-    
-}  */
-
-
-/* SECCION 2 */
-/* h2  {
-    text-align: center;
-    margin: 30px; 
-    
-}
-
-.opcionesComida     {
-    grid-area: comida;
-    
-}
-
-.opcionesLista  {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    justify-content: flex-end;
-    align-items: center;
-    
-}
-
-.opcionesLista ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;    
-}
-
-
-.opcionesLista ul div img  {
-    width: 200px;
-    margin: 10px;
-   
-}
- */
-
-/* FOOTER */
-/* .pie    {
-    grid-area: footer;
-}
-
-.barrios    {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-h3  {
-    text-align: center;
-    margin: 100px;
-}
-
-h4              {
-    
-    margin: 60px;
-}
-
-.ig     {
-    width: 250px;
-    position: relative;
-    animation-name: move;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-} */
-/* @keyframes move     {
+@keyframes move     {
     0%  {
         left: 0px;
         top:0px;
@@ -285,11 +104,9 @@ h4              {
     }
 }
 
-body{
-    background-color: #BF9270;
-    color: #FFEDDB;
-    font-family:'Source Sans Pro';
-} */
+
+
+
 
 /* MOBILE INDEX */
 
@@ -332,7 +149,7 @@ body{
 
 /* NOSOTROSHTML */
 
-/* .contenedor2     {
+.contenedor2     {
     background-color: #BF9270;
     color: #FFEDDB;
     font-family:'Source Sans Pro';
@@ -343,16 +160,17 @@ body{
     "encabezado encabezado"
     "historia historia"
     "footer footer";
-} */
+} 
+
 /* HEADER */
 
-/* .encabezado     {
+.encabezado     {
     grid-area: encabezado;
-} */
+} 
 
 /* HISTORIA  */
 
-/* .historia   {
+.historia   {
     grid-area: historia;
 }
 
@@ -399,13 +217,13 @@ body{
 .foto2 p    {
     text-align: justify;
     margin: 10px;
-} */
+} 
 
 
 
-/* footer nosotros */
+/* footer nosotros  */
 
-/* .pie2   {
+.pie2   {
     grid-area:footer;
 }
 
@@ -427,9 +245,27 @@ h4              {
     margin: 60px;
 }
 
-.ig2    {
-    width: 20%;
+
+.ig2  {
+    width: 150px;
+    position: relative;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+@keyframes move     {
+0%  {
+    left: 0px;
+    top:0px;
+}
+25%     {
+    left: 500px;
+    top: 0px;
+}
+}
+
+
+
 
 @media (max-width:360px)    {
     .contenedor2     {
@@ -460,4 +296,51 @@ h4              {
         
     } 
     
-}   */
+}   
+
+
+/* CONTACTO html */
+
+.encabezado3 {
+    
+    background-image: url(../Imagenes/readme.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;  
+} 
+
+ .encabezado3 img     {
+    
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px; 
+    
+    }    
+
+ .navegador3  {
+      
+     display: flex; 
+     flex-direction: row;
+     justify-content: flex-end;  
+
+}  
+.navegador3 ul   {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    
+    
+}
+.navegador3 ul li   {
+    text-decoration:none;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    
+    
+} 
