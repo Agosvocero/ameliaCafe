@@ -1,4 +1,110 @@
-*   {
+.container-fluid    {
+    background-color: #BF9270;
+    color: #FFEDDB; 
+    font-family:'Source Sans Pro';
+
+}
+
+/* HEADER INDEX */
+
+ .encabezado     {
+    
+    background-image: url(../Imagenes/readme.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;  
+} 
+
+ .encabezado img     {
+    
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px; 
+    
+    }    
+
+ .navegador  {
+      
+     display: flex; 
+     flex-direction: row;
+     justify-content: flex-end;  
+
+}  
+.navegador ul   {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    
+    
+}
+.navegador ul li   {
+    text-decoration:none;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    
+    
+} 
+
+/* Seccion 1 */
+
+h1  {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Source Sans Pro';
+    color: #EDCDBB;
+}
+
+/* Seccion 2 */
+h2  {
+    text-align: center;
+    margin: 30px; 
+    
+} 
+
+.imgg   {
+    width: 250px;
+    margin: 15px;
+} 
+
+
+
+/* footer */
+
+h3  {
+    text-align: center;
+    padding: 50px;
+}
+
+h4              {
+    
+    padding: 50px;
+}
+
+.ig  {
+        width: 150px;
+        position: relative;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *   {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -15,11 +121,11 @@
     "amelia amelia"
     "comida comida"
     "footer footer";
-}
+} */
 
 /* HEADER INDEX */
 
-.encabezado     {
+/* .encabezado     {
     grid-area: encabezado;
     background-image: url(../Imagenes/readme.jpg);
     background-repeat:no-repeat;
@@ -62,12 +168,12 @@
 
 .navegador ul li:hover      {
     transform:scaleY(2)
-}
+} */
 
 /* SECCION 1 */
 
 
-.ameliaCafe     {
+/* .ameliaCafe     {
     grid-area: amelia;
     display: flex;
     flex-direction: column; 
@@ -100,11 +206,11 @@ h1  {
     width: 50%; 
     margin: 30px;
     
-} 
+}  */
 
 
 /* SECCION 2 */
-h2  {
+/* h2  {
     text-align: center;
     margin: 30px; 
     
@@ -136,10 +242,10 @@ h2  {
     margin: 10px;
    
 }
-
+ */
 
 /* FOOTER */
-.pie    {
+/* .pie    {
     grid-area: footer;
 }
 
@@ -167,8 +273,8 @@ h4              {
     animation-name: move;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-@keyframes move     {
+} */
+/* @keyframes move     {
     0%  {
         left: 0px;
         top:0px;
@@ -183,11 +289,11 @@ body{
     background-color: #BF9270;
     color: #FFEDDB;
     font-family:'Source Sans Pro';
-}
+} */
 
 /* MOBILE INDEX */
 
-@media (max-width:360px)    {
+/* @media (max-width:360px)    {
     .contenedor     {
         grid-template-columns:100%;
         grid-template-rows: 1fr (repeat(6));
@@ -219,14 +325,14 @@ body{
         }
    
     
-}  
+}   */
 
 
 
 
 /* NOSOTROSHTML */
 
-.contenedor2     {
+/* .contenedor2     {
     background-color: #BF9270;
     color: #FFEDDB;
     font-family:'Source Sans Pro';
@@ -237,16 +343,16 @@ body{
     "encabezado encabezado"
     "historia historia"
     "footer footer";
-}
+} */
 /* HEADER */
 
-.encabezado     {
+/* .encabezado     {
     grid-area: encabezado;
-}
+} */
 
 /* HISTORIA  */
 
-.historia   {
+/* .historia   {
     grid-area: historia;
 }
 
@@ -293,13 +399,13 @@ body{
 .foto2 p    {
     text-align: justify;
     margin: 10px;
-}
+} */
 
 
 
 /* footer nosotros */
 
-.pie2   {
+/* .pie2   {
     grid-area:footer;
 }
 
@@ -354,4 +460,4 @@ h4              {
         
     } 
     
-}  
+}   */
