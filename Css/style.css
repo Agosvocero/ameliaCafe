@@ -72,6 +72,9 @@ h2  {
     margin: 15px;
 } 
 
+.tiendaimg  {
+    margin: 10px;
+}
 
 
 /* footer */
@@ -143,9 +146,6 @@ h4              {
    
     
 }   */
-
-/* CONTACTO html */
-
 
 
 /* NOSOTROSHTML */
@@ -302,5 +302,6 @@ h4              {
 
 /* TIENDA HTML */
 .tienda     {
-    padding: 10px;
+   margin: 15px;
 }
+
