@@ -1,0 +1,202 @@
+
+.contenedor     {
+    background-color: #BF9270;
+    color: #FFEDDB;
+    font-family:'Source Sans Pro';
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 25% (repeat(4));
+    grid-template-areas: 
+    "encabezado encabezado"
+    "amelia amelia"
+    "comida comida"
+    "footer footer";
+}
+
+.encabezado  {
+    grid-area: encabezado;
+    background-image: url(../Imagenes/logo.jpg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    height: 50%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    img {
+        margin: 10px;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+    .navegador     { 
+                     width: 50%;
+                     display: flex;
+                     flex-direction: row;
+                     flex-wrap: wrap;
+                     justify-content: flex-end;
+                     
+        ul   {
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            li  { 
+                text-decoration:none;
+                margin: 5px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; 
+                justify-content: flex-start;
+                align-items: flex-end; 
+                transition:transform;
+                &hover      {
+                    transform:scaleY(2)
+                }
+                }
+        }
+    }
+}
+
+/* SECCION 1 */
+
+.ameliaCafe     {
+        grid-area: amelia;
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+        h1  {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Source Sans Pro';
+            color: #EDCDBB;
+        }
+        .hijosAmelia    {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        img     {
+            margin: 30px;
+            width: 300px;
+            height: 300px;}
+        p   {
+            text-align: justify;
+            width: 50%; 
+            margin: 30px;
+        }
+        }
+}
+
+/* SECCION 2 */
+.opcionesComida     {
+    grid-area: comida;
+    h2    {
+        text-align: center;
+        margin: 30px; 
+    }
+
+.opcionesLista  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    align-items: center;
+
+    ul  { 
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+        
+
+        .imagenLista    {
+            width: 200px;
+            margin: 10px;
+        }
+
+        
+    }
+
+  }
+}
+/* FOOTER */
+
+.pie    {
+    grid-area: footer;
+    h3  {
+        text-align: center;
+        margin: 100px;
+    }
+      .barrios    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    h4  {
+        margin: 60px;
+    }
+    .ig     {
+        width: 250px;
+        position: relative;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes move     {
+        0%  {
+            left: 0px;
+            top:0px;
+        }
+        25%     {
+            left: 500px;
+            top: 0px;
+        }
+    }
+}
+
+/* MOBILE INDEX */
+
+// @media (max-width:360px)    {
+//     .contenedor     {
+//         grid-template-columns:100%;
+//         grid-template-rows: 1fr (repeat(6));
+//         grid-template-areas: 
+//         "encabezado"
+//         "amelia"
+//         "amelia"
+//         "amelia"
+//         "comida"
+//         "footer";
+        
+//     }
+//     .ameliaCafe p    {
+//         text-align: justify;
+//         width: 100%; 
+//         margin: 30px;   }
+
+//     .opcionesLista ul div img     {
+//             width: 90%;
+//             margin: 10px;
+           
+//         }
+
+//     .ig     {
+//             width: 70%;
+//             margin-left: 50px;
+//             margin-bottom: 20px;
+            
+//         }
+   
+    
+// }  
+
+
+
+
+
+

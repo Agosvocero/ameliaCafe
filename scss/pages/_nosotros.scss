@@ -1,0 +1,133 @@
+/* NOSOTROSHTML */
+
+.contenedor2     {
+    background-color: #BF9270;
+    color: #FFEDDB;
+    font-family:'Source Sans Pro';
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 1fr (repeat(3));
+    grid-template-areas: 
+    "encabezado encabezado"
+    "historia historia"
+    "footer footer";
+}
+/* HEADER */
+
+.encabezado     {
+    grid-area: encabezado;
+}
+
+/* HISTORIA  */
+
+.historia   {
+    grid-area: historia;
+
+
+   h1    {
+
+    margin: 40px;
+    }
+.foto1 img      {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.foto1  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto2 img      {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.foto1 p    {
+    text-align: justify;
+    margin: 10px;
+}
+
+.foto2  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto2 p    {
+    text-align: justify;
+    margin: 10px;
+}
+
+}
+
+
+/* footer nosotros */
+
+.pie2   {
+    grid-area:footer;
+}
+
+.barrios2    {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+h3  {
+    text-align: center;
+    margin: 100px;
+}
+
+h4              {
+    
+    margin: 60px;
+}
+
+.ig2    {
+    width: 20%;
+}
+}
+
+@media (max-width:360px)    {
+    .contenedor2     {
+        grid-template-columns:100%;
+        grid-template-rows: 1fr (repeat(5));
+        grid-template-areas: 
+        "encabezado"
+        "historia"
+        "historia" 
+        "footer"
+        "footer";
+        
+    }
+    .foto1 img    {
+        
+        width: 100%; 
+         }
+
+    .foto2 img  {
+        width: 100%;
+
+    }
+   
+.ig2    {
+        width: 70%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        
+    } 
+    
+}  
