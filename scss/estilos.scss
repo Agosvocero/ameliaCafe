@@ -243,3 +243,21 @@ h4              {
     
 }   
 
+.fotonosotros   {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.fotonosotros--uno  {
+    @extend.fotonosotros;
+    
+}
+
+.fotonosotros--dos  {
+    @extend.fotonosotros;
+    
+}
+
