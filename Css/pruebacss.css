@@ -1,4 +1,173 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box; }
+.container-fluid {
+  background-color: #BF9270;
+  color: #FFEDDB;
+  font-family: 'Source Sans Pro'; }
+
+/* HEADER INDEX */
+.encabezado {
+  background-image: url(../Imagenes/readme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .encabezado img {
+    width: 30%;
+    margin: 5px;
+    border-radius: 20px; }
+  .encabezado .navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .encabezado .navegador ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      .encabezado .navegador ul li {
+        text-decoration: none;
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end; }
+
+/* Seccion 1 */
+h1 {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Source Sans Pro';
+  color: #EDCDBB; }
+
+/* Seccion 2 */
+h2 {
+  text-align: center;
+  margin: 30px; }
+
+.imgg {
+  width: 250px;
+  margin: 15px; }
+
+/* footer */
+h3 {
+  text-align: center;
+  padding: 50px; }
+
+h4 {
+  padding: 50px; }
+
+.ig {
+  width: 150px;
+  position: relative;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes move {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 500px;
+    top: 0px; } }
+
+/* NOSOTROSHTML */
+.contenedor2 {
+  background-color: #BF9270;
+  color: #FFEDDB;
+  font-family: 'Source Sans Pro';
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr repeat(3);
+  grid-template-areas: "encabezado encabezado" "historia historia" "footer footer"; }
+
+/* HEADER */
+.encabezado {
+  grid-area: encabezado; }
+
+/* HISTORIA  */
+.historia {
+  grid-area: historia; }
+
+.historia h1 {
+  margin: 40px; }
+
+.foto1 img {
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px; }
+
+.foto1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.foto2 img {
+  width: 50%;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.foto1 p {
+  text-align: justify;
+  margin: 10px; }
+
+.foto2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.foto2 p {
+  text-align: justify;
+  margin: 10px; }
+
+/* footer nosotros  */
+.pie2 {
+  grid-area: footer; }
+
+.barrios2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+h3 {
+  text-align: center;
+  margin: 100px; }
+
+h4 {
+  margin: 60px; }
+
+.ig2 {
+  width: 150px;
+  position: relative;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+
+@keyframes move {
+  0% {
+    left: 0px;
+    top: 0px; }
+  25% {
+    left: 500px;
+    top: 0px; } }
+
+@media (max-width: 360px) {
+  .contenedor2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr repeat(5);
+    grid-template-areas: "encabezado" "historia" "historia"  "footer" "footer"; }
+  .foto1 img {
+    width: 100%; }
+  .foto2 img {
+    width: 100%; }
+  .ig2 {
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 20px; } }

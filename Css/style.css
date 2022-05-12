@@ -7,15 +7,9 @@
 
 /* HEADER INDEX */
 
-<<<<<<< HEAD
  .encabezado     {
     
     background-image: url(../Imagenes/readme.jpg);
-=======
-.encabezado     {
-    grid-area: encabezado;
-    background-image: url(../Imagenes/logo.jpg.jpg);
->>>>>>> sass
     background-repeat:no-repeat;
     background-size: cover;  
     display:flex;
