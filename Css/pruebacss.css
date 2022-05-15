@@ -92,36 +92,29 @@ h4 {
 .historia h1 {
   margin: 40px; }
 
-.foto1 img {
+.fotonosotros, .fotonosotros--uno, .fotonosotros--dos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.fotonosotros--uno img {
   width: 50%;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 30px; }
 
-.foto1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+.fotonosotros--uno p {
+  text-align: justify;
+  margin: 10px; }
 
-.foto2 img {
+.fotonosotros--dos img {
   width: 50%;
   margin-right: 10px;
   margin-left: 10px; }
 
-.foto1 p {
-  text-align: justify;
-  margin: 10px; }
-
-.foto2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.foto2 p {
+.fotonosotros--dos p {
   text-align: justify;
   margin: 10px; }
 
@@ -171,10 +164,3 @@ h4 {
     width: 70%;
     margin-left: 50px;
     margin-bottom: 20px; } }
-
-.fotonosotros, .fotonosotros--uno, .fotonosotros--dos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }

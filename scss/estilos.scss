@@ -123,47 +123,44 @@ h4              {
 
     margin: 40px;
 }
-.foto1 img      {
-    width: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 30px;
-}
 
-.foto1  {
+.fotonosotros   {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-}
-
-.foto2 img      {
-    width: 50%;
-    margin-right: 10px;
-    margin-left: 10px;
-
-}
-.foto1 p    {
-    text-align: justify;
-    margin: 10px;
-}
-
-.foto2  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.foto2 p    {
-    text-align: justify;
-    margin: 10px;
-} 
-
+ }
+ 
+ .fotonosotros--uno  {
+     @extend .fotonosotros;
+     img     {
+     width: 50%;
+     margin-right: 10px;
+     margin-left: 10px;
+     margin-bottom: 30px;
+     }
+     p   {
+         text-align: justify;
+         margin: 10px;
+ 
+     }
+ }
+ 
+ .fotonosotros--dos  {
+     @extend .fotonosotros;
+     img     {
+         width: 50%;
+         margin-right: 10px;
+         margin-left: 10px;
+ 
+     }
+     p   {
+         text-align: justify;
+         margin: 10px;
+     }
+     
+ }
 
 
 /* footer nosotros  */
@@ -243,21 +240,4 @@ h4              {
     
 }   
 
-.fotonosotros   {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-}
-
-.fotonosotros--uno  {
-    @extend.fotonosotros;
-    
-}
-
-.fotonosotros--dos  {
-    @extend.fotonosotros;
-    
-}
 
