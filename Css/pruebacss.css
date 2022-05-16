@@ -122,13 +122,6 @@ h4 {
 .pie2 {
   grid-area: footer; }
 
-.barrios2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-
 h3 {
   text-align: center;
   margin: 100px; }
