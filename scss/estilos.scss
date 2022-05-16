@@ -1,8 +1,21 @@
+$fondo:#BF9270;
+$letra: #FFEDDB;
+
+$boxmodel:  (
+    margin:5px,
+    padding: 50px,
+);
+
 .container-fluid    {
-    background-color: #BF9270;
-    color: #FFEDDB; 
+    background-color: $fondo;
+    color: $letra;
     font-family:'Source Sans Pro';
 
+}
+
+
+@mixin ancho ($ancho) {
+    width: $ancho
 }
 
 /* HEADER INDEX */
@@ -17,8 +30,8 @@
     justify-content: space-between;
     
     img     {
-        width: 30%;
-        margin: 5px;
+        @include ancho (30%);
+        margin: map-get($boxmodel, margin);
         border-radius: 20px; 
     }
 
@@ -32,7 +45,7 @@
             justify-content:flex-end;
           li    {
                 text-decoration:none;
-                margin: 5px;
+                margin: map-get($boxmodel, margin);
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
@@ -46,9 +59,9 @@
 /* Seccion 1 */
 h1  {
     text-align: center;
-    padding: 50px;
+    padding: map-get($boxmodel, padding);
     font-family: 'Source Sans Pro';
-    color: #EDCDBB;
+    color: $letra;
 }
 
 /* Seccion 2 */
@@ -59,7 +72,7 @@ h2  {
 } 
 
 .imgg   {
-    width: 250px;
+    @include ancho (250px);
     margin: 15px;
 } 
 
@@ -67,16 +80,16 @@ h2  {
 
 h3  {
     text-align: center;
-    padding: 50px;
+    padding: map-get($boxmodel, padding);
 }
 
 h4              {
     
-    padding: 50px;
+    padding: map-get($boxmodel, padding);
 }
 
 .ig  {
-        width: 150px;
+        @include ancho (150px);
         position: relative;
         animation-name: move;
         animation-duration: 3s;
@@ -95,7 +108,7 @@ h4              {
 
 /* NOSOTROSHTML */
 .contenedor2     {
-    background-color: #BF9270;
+    background-color: $fondo;
     color: #FFEDDB;
     font-family:'Source Sans Pro';
     display:grid;
