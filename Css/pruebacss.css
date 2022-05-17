@@ -37,7 +37,14 @@ h1 {
   text-align: center;
   padding: 50px;
   font-family: 'Source Sans Pro';
-  color: #FFEDDB; }
+  color: #FFEDDB;
+  text-decoration: underline; }
+
+.seccion1 img {
+  border-radius: 15px; }
+
+.seccion1 p {
+  font-size: 22px; }
 
 /* Seccion 2 */
 h2 {
@@ -71,24 +78,21 @@ h4 {
     left: 500px;
     top: 0px; } }
 
+/* CONTACTO HTML */
+.formulario {
+  width: 50%; }
+  .formulario .botoncontacto {
+    margin-top: 10px; }
+
 /* NOSOTROSHTML */
-.contenedor2 {
+.container-fluid3 {
   background-color: #BF9270;
   color: #FFEDDB;
   font-family: 'Source Sans Pro';
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr repeat(3);
-  grid-template-areas: "encabezado encabezado" "historia historia" "footer footer"; }
+  background-color: white; }
 
 /* HEADER */
-.encabezado {
-  grid-area: encabezado; }
-
 /* HISTORIA  */
-.historia {
-  grid-area: historia; }
-
 .historia h1 {
   margin: 40px; }
 
@@ -100,23 +104,13 @@ h4 {
   align-items: center; }
 
 .fotonosotros--uno img {
-  width: 50%;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 30px; }
+  width: 50%; }
 
 .fotonosotros--uno p {
-  text-align: justify;
-  margin: 10px; }
+  text-align: justify; }
 
 .fotonosotros--dos img {
-  width: 50%;
-  margin-right: 10px;
-  margin-left: 10px; }
-
-.fotonosotros--dos p {
-  text-align: justify;
-  margin: 10px; }
+  width: 50%; }
 
 /* footer nosotros  */
 .pie2 {

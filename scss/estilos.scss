@@ -24,6 +24,7 @@ $boxmodel:  (
     background-image: url(../Imagenes/readme.jpg);
     background-repeat:no-repeat;
     background-size: cover;  
+    
 
     display:flex;
     flex-wrap: wrap;
@@ -58,11 +59,24 @@ $boxmodel:  (
 } 
 
 /* Seccion 1 */
+
 h1  {
     text-align: center;
     padding: map-get($boxmodel, padding);
     font-family: 'Source Sans Pro';
     color: $letra;
+    text-decoration: underline;
+    
+}
+
+.seccion1                   {
+    img     {
+        border-radius: 15px;
+
+    }
+    p               {
+        font-size: 22px;
+    }
 }
 
 /* Seccion 2 */
@@ -107,31 +121,35 @@ h4              {
     }
 }
 
+
+/* CONTACTO HTML */
+.formulario     {
+    width: 50%;
+   .botoncontacto   {
+       margin-top: 10px;
+   }
+   
+  
+    
+
+}
+
+
+
 /* NOSOTROSHTML */
-.contenedor2     {
+.container-fluid3     {
     background-color: $fondo;
     color: #FFEDDB;
     font-family:'Source Sans Pro';
-    display:grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 1fr (repeat(3));
-    grid-template-areas: 
-    "encabezado encabezado"
-    "historia historia"
-    "footer footer";
+    background-color: white;
+   
 } 
 
 /* HEADER */
 
-.encabezado     {
-    grid-area: encabezado;
-} 
 
 /* HISTORIA  */
 
-.historia   {
-    grid-area: historia;
-}
 
 .historia h1    {
 
@@ -150,14 +168,11 @@ h4              {
      @extend .fotonosotros;
      img     {
      width: 50%;
-     margin-right: 10px;
-     margin-left: 10px;
-     margin-bottom: 30px;
+    
      }
      p   {
          text-align: justify;
-         margin: 10px;
- 
+        
      }
  }
  
@@ -165,14 +180,8 @@ h4              {
      @extend .fotonosotros;
      img     {
          width: 50%;
-         margin-right: 10px;
-         margin-left: 10px;
- 
-     }
-     p   {
-         text-align: justify;
-         margin: 10px;
-     }
+   
+}
      
  }
 
