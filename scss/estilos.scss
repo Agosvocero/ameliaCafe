@@ -6,6 +6,10 @@ $boxmodel:  (
     padding: 50px,
 );
 
+@mixin ancho ($ancho) {
+    width: $ancho
+}
+
 .container-fluid    {
     background-color: $fondo;
     color: $letra;
@@ -14,9 +18,7 @@ $boxmodel:  (
 }
 
 
-@mixin ancho ($ancho) {
-    width: $ancho
-}
+// INDEX 
 
 /* HEADER INDEX */
 .encabezado     {
@@ -65,8 +67,11 @@ h1  {
     padding: map-get($boxmodel, padding);
     font-family: 'Source Sans Pro';
     color: $letra;
-    text-decoration: underline;
     
+    
+}
+.indexx     {
+    text-decoration:underline;
 }
 
 .seccion1                   {
@@ -75,7 +80,8 @@ h1  {
 
     }
     p               {
-        font-size: 22px;
+        font-size: 20px;
+        text-align: justify;
     }
 }
 
@@ -122,6 +128,8 @@ h4              {
 }
 
 
+
+
 /* CONTACTO HTML */
 
 .formulario     {
@@ -139,24 +147,7 @@ h4              {
 
 /* NOSOTROSHTML */
 
-.container-fluid3     {
-    background-color: $fondo;
-    color: $letra;
-    font-family:'Source Sans Pro';
-    
-   
-} 
-
-/* HEADER */
-
-
 /* HISTORIA  */
-
-
-.historia h1    {
-
-    margin: 40px;
-}
 
 .fotonosotros   {
     display: flex;
@@ -172,6 +163,7 @@ h4              {
      img     {
      width: 35%;
      margin: 10px;
+     border-radius: 15px;
      
      }
      p   {
@@ -185,40 +177,16 @@ h4              {
      img     {
          width: 35%;
          margin: 10px;
-}
+         border-radius: 15px;
+     }
+     p   {
+        text-align: justify;
+       
+    }
      
  }
 
 
-/* footer nosotros  */
-
-.nosotros {
-    text-align: center;
-    padding: map-get($boxmodel, padding);
-}
-
-.nosotrosh4             {
-    
-    padding: map-get($boxmodel, padding);
-}
-
-.ig  {
-        @include ancho (150px);
-        position: relative;
-        animation-name: move;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-}
-@keyframes move     {
-    0%  {
-        left: 0px;
-        top:0px;
-    }
-    25%     {
-        left: 500px;
-        top: 0px;
-    }
-}
 
 // TIENDA HTML
 
