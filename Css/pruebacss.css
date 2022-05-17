@@ -135,3 +135,11 @@ h4 {
   25% {
     left: 500px;
     top: 0px; } }
+
+.tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .tienda img {
+    width: 25%;
+    margin: 25px; }
