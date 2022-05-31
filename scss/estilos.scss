@@ -208,9 +208,22 @@ h4              {
     display: flex;
     flex-direction: row;
     justify-content: center;
-     img     {
-        width: 25%;
-        margin: 25px;
+    flex-wrap:nowrap;
+    
+    img                     {
+        border-radius: 40px;
+        @include ancho (250px);
+        margin: 15px;
+        border-radius: 40px;
+        flex-wrap: nowrap;
+       
     }
+
+     p   {
+        text-align: center;
+        
+       
+     }
+ 
  }
 
