@@ -26,6 +26,7 @@ $boxmodel:  (
     background-image: url(../Imagenes/readme.jpg);
     background-repeat:no-repeat;
     background-size: cover;  
+   
     
 
     display:flex;
@@ -167,6 +168,7 @@ h4              {
      @extend .fotonosotros;
      img     {
      width: 35%;
+     
      margin: 10px;
      border-radius: 15px;
      
@@ -181,6 +183,7 @@ h4              {
      @extend .fotonosotros;
      img     {
          width: 35%;
+         
          margin: 10px;
          border-radius: 15px;
      }
