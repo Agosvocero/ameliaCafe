@@ -91,6 +91,9 @@ h4 {
   .formulario .botoncontacto {
     margin-top: 10px; }
 
+.maps {
+  margin-bottom: 30px; }
+
 /* NOSOTROSHTML */
 /* HISTORIA  */
 .fotonosotros, .fotonosotros--uno, .fotonosotros--dos {
@@ -111,7 +114,8 @@ h4 {
 .fotonosotros--dos img {
   width: 35%;
   margin: 10px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin-bottom: 30px; }
 
 .fotonosotros--dos p {
   text-align: justify; }
@@ -129,3 +133,7 @@ h4 {
     flex-wrap: nowrap; }
   .tienda p {
     text-align: center; }
+
+.menu2 {
+  margin-bottom: 30px;
+  margin-top: 10px; }
