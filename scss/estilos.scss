@@ -99,19 +99,28 @@ h2  {
 
 
 
-
-/* footer */
+/* FOOTER */
 footer {
     background-image: url(../Imagenes/FOOTER.jpg);
     background-size: cover;  
     background-repeat:no-repeat;
-    
     margin-top: 30px;
+    display: flex;
+    
+    .redes  {
+       display: flex;
+     }
+
+    .listaredes{
+        margin-right: 10px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
 }
-h3  {
-    text-align: center;
-    padding: map-get($boxmodel, padding);
-}
+
 
 
 h4              {
@@ -119,31 +128,25 @@ h4              {
     padding: map-get($boxmodel, padding);
 }
 
-.ig  {
-        @include ancho (150px);
-        position: relative;
-        animation-name: move;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-}
-@keyframes move     {
-    0%  {
-        left: 0px;
-        top:0px;
-    }
-    25%     {
-        left: 500px;
-        top: 0px;
-    }
+
+.ig     {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    
+    
 }
 
-
-
+    
 
 /* CONTACTO HTML */
-
+h3  {
+    margin-top: 50px;
+    margin-left: 30px;
+}
 .formulario     {
     width: 50%;
+    margin-left: 20px;
     
 
    .botoncontacto   {
@@ -155,6 +158,11 @@ h4              {
 
 .maps    {
     margin-bottom: 30px;
+}
+
+.ubi    {
+    width: 15px;
+    height: 15px;
 }
 
 
