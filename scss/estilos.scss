@@ -96,7 +96,28 @@ h2  {
     margin: 15px;
     border-radius: 20px;
 } 
+.opcionesComida    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:nowrap;
+    
+    .imgg                    {
+        border-radius: 40px;
+        @include ancho (250px);
+        margin: 15px;
+        border-radius: 40px;
+        flex-wrap: nowrap;
+       
+    }
 
+     p   {
+        text-align: center;
+        
+       
+     }
+ 
+ }
 
 
 /* FOOTER */
@@ -107,6 +128,7 @@ footer {
     background-repeat:no-repeat;
     margin-top: 30px;
     display: flex;
+    
     
     .redes  {
        display: flex;

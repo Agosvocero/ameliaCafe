@@ -56,6 +56,20 @@ h2 {
   margin: 15px;
   border-radius: 20px; }
 
+.opcionesComida {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap; }
+  .opcionesComida .imgg {
+    border-radius: 40px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 40px;
+    flex-wrap: nowrap; }
+  .opcionesComida p {
+    text-align: center; }
+
 /* FOOTER */
 footer {
   background-image: url(../Imagenes/FOOTER.jpg);
