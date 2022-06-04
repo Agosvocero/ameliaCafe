@@ -18,7 +18,7 @@ $boxmodel:  (
 }
 
 
-// INDEX 
+// INDEX
 
 /* HEADER INDEX */
 .encabezado     {
@@ -26,6 +26,7 @@ $boxmodel:  (
     background-image: url(../Imagenes/readme.jpg);
     background-repeat:no-repeat;
     background-size: cover;  
+   
     
 
     display:flex;
@@ -98,13 +99,29 @@ h2  {
 
 
 
+/* FOOTER */
 
-/* footer */
+footer {
+    background-image: url(../Imagenes/FOOTER.jpg);
+    background-size: cover;  
+    background-repeat:no-repeat;
+    margin-top: 30px;
+    display: flex;
+    
+    .redes  {
+       display: flex;
+     }
 
-h3  {
-    text-align: center;
-    padding: map-get($boxmodel, padding);
+    .listaredes{
+        margin-right: 10px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
 }
+
 
 
 h4              {
@@ -112,40 +129,48 @@ h4              {
     padding: map-get($boxmodel, padding);
 }
 
-.ig  {
-        @include ancho (150px);
-        position: relative;
-        animation-name: move;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-}
-@keyframes move     {
-    0%  {
-        left: 0px;
-        top:0px;
-    }
-    25%     {
-        left: 500px;
-        top: 0px;
-    }
+
+.ig     {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    
+    
 }
 
-
-
+    
 
 /* CONTACTO HTML */
 
+h3  {
+    margin-top: 50px;
+    margin-left: 30px;
+}
 .formulario     {
     width: 50%;
+    margin-left: 20px;
     
 
    .botoncontacto   {
        margin-top: 10px;
    }
-   
-  
-    
+ 
 
+}
+
+.maps    {
+    margin-bottom: 30px;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redes  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -167,6 +192,7 @@ h4              {
      @extend .fotonosotros;
      img     {
      width: 35%;
+     
      margin: 10px;
      border-radius: 15px;
      
@@ -181,8 +207,10 @@ h4              {
      @extend .fotonosotros;
      img     {
          width: 35%;
+         
          margin: 10px;
          border-radius: 15px;
+         margin-bottom: 30px;
      }
      p   {
         text-align: justify;
@@ -199,9 +227,28 @@ h4              {
     display: flex;
     flex-direction: row;
     justify-content: center;
-     img     {
-        width: 25%;
-        margin: 25px;
+    flex-wrap:nowrap;
+    
+    img                     {
+        border-radius: 40px;
+        @include ancho (250px);
+        margin: 15px;
+        border-radius: 40px;
+        flex-wrap: nowrap;
+       
     }
+
+     p   {
+        text-align: center;
+        
+       
+     }
+ 
  }
 
+//  menu
+
+.menu2  {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
