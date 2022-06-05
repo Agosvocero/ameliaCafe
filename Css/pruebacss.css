@@ -149,3 +149,11 @@ h4 {
 .menu2 {
   margin-bottom: 30px;
   margin-top: 10px; }
+
+.wapp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+  .wapp img {
+    width: 7vh;
+    height: 7vh; }
